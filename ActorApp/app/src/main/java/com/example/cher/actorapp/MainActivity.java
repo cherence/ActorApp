@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ArrayList<Actor> arrayList = new ArrayList<>();
-        arrayList.add(new Actor("Leonardo Dicapiro","Nov 11, 1974","1"));
-        arrayList.add(new Actor("Matt Damon","Oct 8, 1970","1"));
-        arrayList.add(new Actor("Jennifer Lawrence","August 15, 1990","1"));
+        ArrayList<Actor> mActorArrayList = new ArrayList<>();
+        mActorArrayList.add(new Actor("Brad Pitt", "Nov 11, 1974", "2"));
+        mActorArrayList.add(new Actor("Seth Rogen", "Oct 8, 1970", "1"));
+        mActorArrayList.add(new Actor("Jennifer Aniston", "August 15, 1990", "1"));
         listView = (ListView)findViewById(R.id.listView_id);
-        customAdapter = new CustomAdapter(MainActivity.this,arrayList);
+        customAdapter = new CustomAdapter(MainActivity.this,mActorArrayList);
         listView.setAdapter(customAdapter);
 
 
