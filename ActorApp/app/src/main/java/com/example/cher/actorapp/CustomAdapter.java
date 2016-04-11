@@ -26,9 +26,9 @@ public class CustomAdapter extends ArrayAdapter {
         TextView name = (TextView)rowItem.findViewById(R.id.name_textView_id);
         TextView dob = (TextView)rowItem.findViewById(R.id.dob_textView_id);
         TextView oscars = (TextView)rowItem.findViewById(R.id.oscarsWon_textView_id);
-        name.setText(arrayList.get(position).getName());
-        dob.setText(arrayList.get(position).getDob());
-        oscars.setText(arrayList.get(position).getOscars());
+        name.setText("Name: " +arrayList.get(position).getName());
+        dob.setText("DOB: "+arrayList.get(position).getDob());
+        oscars.setText("Oscars Won: "+arrayList.get(position).getOscars());
         return rowItem;
     }
 }
